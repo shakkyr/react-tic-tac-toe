@@ -1,5 +1,6 @@
 import React  from 'react';
 import Square from './Square';
+// import './App.css'
 
 class Board extends React.Component {
     renderSquare(i){
@@ -9,18 +10,18 @@ class Board extends React.Component {
     }
     render() {
         return (
-            <div>
-                <div className="border-row">
+            <div className='container'>
+                <div className="border-row row1">
                     {this.renderSquare(0)}
                     {this.renderSquare(1)}
                     {this.renderSquare(2)}
                 </div>
-                <div className="border-row">
+                <div className="border-row row2">
                     {this.renderSquare(3)}
                     {this.renderSquare(4)}
                     {this.renderSquare(5)}
                 </div>
-                <div className="border-row">
+                <div className="border-row row3">
                     {this.renderSquare(6)}
                     {this.renderSquare(7)}
                     {this.renderSquare(8)}
@@ -32,3 +33,4 @@ class Board extends React.Component {
 }
 
 export default Board;
+
